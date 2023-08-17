@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    images: './lib/Grid.tsx'
+    images: {
+        loader: 'default',
+        path: '/_next/image'
+    }
 }
 module.exports = nextConfig
