@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    images: {
-        loader: 'imgix',
-        path: '/_next/static/images'
-    }
+    skipTrailingSlashRedirect: true,
+    basePath: './'
 }
 module.exports = nextConfig
