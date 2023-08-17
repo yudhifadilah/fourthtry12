@@ -3,9 +3,9 @@ import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
 
 const images = [
-  { src: "/images/image1.jpg", alt: "KiD" },
-  { src: "/images/image2.jpg", alt: "Udemy Machine Learning" },
-  { src: "/images/image3.jpg", alt: "Rakamin Data Science" },
+  { src: "/static/images/image1.jpg", alt: "KiD" },
+  { src: "/static/images/image2.jpg", alt: "Udemy Machine Learning" },
+  { src: "/static/images/image3.jpg", alt: "Rakamin Data Science" },
 ];
 
 export function ImageGrid() {
