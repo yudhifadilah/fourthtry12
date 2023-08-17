@@ -6,7 +6,6 @@ const nextConfig = {
 
 
 // next.config.js
-module.exports = {
-    pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
-  }
+module.exports = nextConfig
+  
   
