@@ -9,7 +9,9 @@ const images = [
 
 export function ImageGrid() {
   return (
-    <div className="container mx-auto px-8">
+    <div className="container mx-lg px-8">
+          <div className="px-8">
+          <div className="px-8">
       <div className="flex justify-between flex flex-wrap">
       {images.map((image, index) => (
         <div key={index} className="flex flex-row md:w-1/3 p-4">
@@ -25,7 +27,8 @@ export function ImageGrid() {
       ))}
         </div>
         </div>
-   // </div>
+   </div>
+   </div>
   );
 }
 
