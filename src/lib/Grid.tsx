@@ -6,29 +6,29 @@ const images = [
   { src: "/images/image1.jpg", alt: "KiD" },
   { src: "/images/image2.jpg", alt: "Udemy Machine Learning" },
   { src: "/images/image3.jpg", alt: "Rakamin Data Science" },
+
+
 ];
 
 export function ImageGrid() {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="container mx-auto">
+      <div className="flex justify-between flex flex-wrap">
       {images.map((image, index) => (
-        <div key={index} className="relative h-96">
+        <div key={index} className="flex flex-row">
           <Image
-            className="h-full w-full rounded-xl object-cover object-center border border-black"
+            className="grid grid-cols-5 gap-5 border border-black"
             src={image.src}
             alt={image.alt}
-            width={450}
-            height={250}
+            width={230}
+            height={90}
             quality={75}
           />
-          <figcaption className="absolute bottom-4 left-4">
-            <Typography variant="body" color="yellow">
-               {index + 1}
-            </Typography>
-          </figcaption>
         </div>
       ))}
-    </div>
+        </div>
+        </div>
+   // </div>
   );
 }
 
