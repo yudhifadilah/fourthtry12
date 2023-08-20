@@ -3,6 +3,8 @@ import Navbar from '../lib/Navbar';
 import { TestimonialCard } from '../lib/EcommerceCard'; 
 import { FooterASU } from '../lib/footer'; 
 import { ImageGrid } from '../lib/Grid'; 
+import { Skill } from '../lib/Skill'; 
+
 
 
 const Home: React.FC = () => {
@@ -21,9 +23,9 @@ const Home: React.FC = () => {
           <TestimonialCard />
           </div>
           <br></br>
-          <div className="grid grid-cols-2 gap-4">
           <ImageGrid />
-          </div>
+          <br></br>
+          <Skill />
           <br></br>
           <FooterASU />
           <br></br>

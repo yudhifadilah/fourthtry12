@@ -11,12 +11,11 @@ export function ImageGrid() {
   return (
     <div className="container mx-lg px-8">
           <div className="px-8">
-          <div className="px-8">
-      <div className="flex justify-between flex flex-wrap">
+      <div className="flex justify-between flex flex-wrap border border-black">
       {images.map((image, index) => (
-        <div key={index} className="flex flex-row md:w-1/3 p-4">
+        <div key={index} className="flex flex-row md:w-1/2 p-3">
           <Image
-            className="grid grid-cols-5 gap-5 border border-black"
+            className="grid grid-cols-3 gap-3 border border-black"
             src={image.src}
             alt={image.alt}
             width={230}
@@ -27,7 +26,6 @@ export function ImageGrid() {
       ))}
         </div>
         </div>
-   </div>
    </div>
   );
 }
